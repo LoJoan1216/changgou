@@ -13,6 +13,11 @@
     <packaging>pom</packaging>
     <modules>
         <module>changgou-service-goods-api</module>
+        <module>changgou-service-business-api</module>
+        <module>changgou-service-config-api</module>
+        <module>changgou-service-order-api</module>
+        <module>changgou-service-system-api</module>
+        <module>changgou-service-user-api</module>
     </modules>
 
     <dependencies>

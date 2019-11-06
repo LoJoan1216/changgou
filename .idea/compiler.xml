@@ -6,16 +6,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="changgou-canal" />
         <module name="changgou-common" />
         <module name="changgou-common-db" />
         <module name="changgou-eureka" />
         <module name="changgou-gateway-system" />
+        <module name="changgou-service-business" />
+        <module name="changgou-service-business-api" />
+        <module name="changgou-service-config" />
+        <module name="changgou-service-config-api" />
         <module name="changgou-service-file" />
         <module name="changgou-service-goods" />
         <module name="changgou-service-goods-api" />
+        <module name="changgou-service-order" />
+        <module name="changgou-service-order-api" />
+        <module name="changgou-service-system" />
+        <module name="changgou-service-system-api" />
+        <module name="changgou-service-user" />
+        <module name="changgou-service-user-api" />
+        <module name="changgou_service_system_api" />
+        <module name="changgou_service_user_api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="changgou-canal" target="1.8" />
       <module name="changgou-common" target="1.8" />
       <module name="changgou-common-db" target="1.8" />
       <module name="changgou-eureka" target="1.8" />
@@ -24,11 +38,23 @@
       <module name="changgou-parent" target="1.8" />
       <module name="changgou-service" target="1.8" />
       <module name="changgou-service-api" target="1.8" />
+      <module name="changgou-service-business" target="1.8" />
+      <module name="changgou-service-business-api" target="1.8" />
+      <module name="changgou-service-config" target="1.8" />
+      <module name="changgou-service-config-api" target="1.8" />
       <module name="changgou-service-file" target="1.8" />
       <module name="changgou-service-goods" target="1.8" />
       <module name="changgou-service-goods-api" target="1.8" />
+      <module name="changgou-service-order" target="1.8" />
+      <module name="changgou-service-order-api" target="1.8" />
+      <module name="changgou-service-system" target="1.8" />
+      <module name="changgou-service-system-api" target="1.8" />
+      <module name="changgou-service-user" target="1.8" />
+      <module name="changgou-service-user-api" target="1.8" />
       <module name="changgou-web" target="1.8" />
       <module name="changgou_gateway" target="1.8" />
+      <module name="changgou_service_system_api" target="1.5" />
+      <module name="changgou_service_user_api" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
