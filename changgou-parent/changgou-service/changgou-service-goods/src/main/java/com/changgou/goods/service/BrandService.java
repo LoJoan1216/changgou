@@ -49,7 +49,7 @@ public interface BrandService {
      * @param searchMap
      * @return
      */
-    public List<Brand> searchBrandListByMap(Map<String,Object> searchMap);
+    public List<Brand> searchBrandListByMap(Map<String, Object> searchMap);
 
     /**
      * 分页
@@ -57,7 +57,7 @@ public interface BrandService {
      * @param size
      * @return
      */
-    public Page<Brand> findPage(Integer page,Integer size);
+    public Page<Brand> findPage(Integer page, Integer size);
 
     /**
      * 多条件查询品牌并分页
@@ -65,7 +65,7 @@ public interface BrandService {
      * @param size
      * @return
      */
-    public Page<Brand> findPageByMap(Map<String,Object> searchMap,Integer page,Integer size);
+    public Page<Brand> findPageByMap(Map<String, Object> searchMap, Integer page, Integer size);
 
     /**
      * 根据商品分类名称查询品牌

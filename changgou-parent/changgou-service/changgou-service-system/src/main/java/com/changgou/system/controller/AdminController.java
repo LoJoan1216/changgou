@@ -6,12 +6,15 @@ import com.changgou.entity.StatusCode;
 
 import com.changgou.system.pojo.Admin;
 import com.changgou.system.service.AdminService;
+import com.changgou.system.util.JwtUtil;
 import com.github.pagehelper.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 @RestController
 @CrossOrigin
@@ -118,9 +121,16 @@ public class AdminController {
     public Result login(@RequestBody Admin admin) {
         boolean login = adminService.login(admin);
         if (login) {
-            return new Result();
+            //密码正确的
+            //生成jwt令牌，返回客户端
+            Map<String, String> info = new HashMap<>();
+            info.put("username", admin.getLoginName());
+            //基于工具类生成jwt令牌
+            String token = JwtUtil.createJWT(UUID.randomUUID().toString(), admin.getLoginName(), null);
+            info.put("token", token);
+            return new Result(true, StatusCode.OK, "登录成功", info);
         } else {
-            return new Result(false, StatusCode.OK, "用户名或密码有误");
+            return new Result(false, StatusCode.LOGINERROR, "用户名或密码有误");
         }
 
     }

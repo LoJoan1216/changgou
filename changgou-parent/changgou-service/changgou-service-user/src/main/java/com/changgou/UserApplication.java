@@ -1,4 +1,4 @@
-package com.changgou.user;
+package com.changgou;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

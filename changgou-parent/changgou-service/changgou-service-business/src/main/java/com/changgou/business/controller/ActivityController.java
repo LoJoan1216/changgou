@@ -1,12 +1,14 @@
 package com.changgou.business.controller;
+
+import com.changgou.business.pojo.Activity;
+import com.changgou.business.service.ActivityService;
 import com.changgou.entity.PageResult;
 import com.changgou.entity.Result;
 import com.changgou.entity.StatusCode;
-import com.changgou.business.service.ActivityService;
-import com.changgou.business.pojo.Activity;
 import com.github.pagehelper.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 import java.util.Map;
 @RestController
@@ -34,7 +36,7 @@ public class ActivityController {
      * @return
      */
     @GetMapping("/{id}")
-    public Result findById(@PathVariable Integer id){
+    public Result findById(@PathVariable("id") Integer id){
         Activity activity = activityService.findById(id);
         return new Result(true,StatusCode.OK,"查询成功",activity);
     }

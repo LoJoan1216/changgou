@@ -1,4 +1,4 @@
-package com.changgou.user.controller;
+package com.changgou.handler;
 import com.changgou.entity.Result;
 import com.changgou.entity.StatusCode;
 import org.springframework.web.bind.annotation.ControllerAdvice;
