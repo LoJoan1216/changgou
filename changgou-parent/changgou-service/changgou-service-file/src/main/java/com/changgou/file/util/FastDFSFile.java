@@ -1,4 +1,4 @@
-package com.changgou.file.pojo;
+package com.changgou.file.util;
 
 /**
  * 文件上传

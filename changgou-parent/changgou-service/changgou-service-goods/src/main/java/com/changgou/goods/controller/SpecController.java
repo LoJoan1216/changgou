@@ -30,12 +30,6 @@ public class SpecController {
      */
     @GetMapping(value = "/category/{categoryName}")
     public Result findSpecListByCategoryName(@PathVariable("categoryName") String categoryName) {
-//        try {
-//            categoryName = new String(categoryName.getBytes("ISO-8859-1"), "utf-8");
-//
-//        } catch (UnsupportedEncodingException e) {
-//            e.printStackTrace();
-//        }
         List<Map> specListByCategoryName = specMapper.findSpecListByCategoryName(categoryName);
         return new Result(true, StatusCode.OK, "查询成功", specListByCategoryName);
     }

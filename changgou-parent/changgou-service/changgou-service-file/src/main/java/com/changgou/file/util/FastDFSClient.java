@@ -1,6 +1,5 @@
 package com.changgou.file.util;
 
-import com.changgou.file.pojo.FastDFSFile;
 import org.csource.common.NameValuePair;
 import org.csource.fastdfs.*;
 import org.slf4j.LoggerFactory;
