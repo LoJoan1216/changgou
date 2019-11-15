@@ -27,6 +27,7 @@
       <module fileurl="file://$PROJECT_DIR$/changgou-parent/changgou-web/changgou-web.iml" filepath="$PROJECT_DIR$/changgou-parent/changgou-web/changgou-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/changgou-parent/changgou-service-api/changgou_service_system_api/changgou_service_system_api.iml" filepath="$PROJECT_DIR$/changgou-parent/changgou-service-api/changgou_service_system_api/changgou_service_system_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/changgou-parent/changgou-service-api/changgou_service_user_api/changgou_service_user_api.iml" filepath="$PROJECT_DIR$/changgou-parent/changgou-service-api/changgou_service_user_api/changgou_service_user_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou-parent/changgou-canal/starter-canal/starter-canal.iml" filepath="$PROJECT_DIR$/changgou-parent/changgou-canal/starter-canal/starter-canal.iml" />
     </modules>
   </component>
 </project>
